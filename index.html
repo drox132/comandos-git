@@ -7,9 +7,179 @@
     <title>Comando Git</title>
 </head>
 <body>
-    
 
+    <p>
+        $git
+            uso: git [-v | --versión] [-h | --help] [-C <ruta>] [-c <nombre>=<valor>]
+           [--ruta-exec[=<ruta>]] [--ruta-html] [--ruta-man] [--ruta-info]
+           [-p | --paginar | -P | --no-pager] [--no-reemplazar-objetos] [--bare]
+           [--git-dir=<ruta>] [--work-tree=<ruta>] [--namespace=<nombre>]
+           [--config-env=<nombre>=<envvar>] <comando> [<argumentos>]
+    </p>
     
+    <h1>Estos son comandos comunes de Git que se usan en varias situaciones:</h1>
+    
+    <p>
+        iniciar un área de trabajo (ver también: tutorial de ayuda de git)
+        clon Clonar un repositorio en un nuevo directorio
+        init Crea un repositorio Git vacío o reinicializa uno existente
+    </p>
+    <p>
+        trabajar en el cambio actual (ver también: ayuda de git todos los días)
+        add Agregar contenido de archivo al índice
+        mv Mover o cambiar el nombre de un archivo, un directorio o un enlace simbólico
+        restaurar Restaurar archivos de árbol de trabajo
+        rm Eliminar archivos del árbol de trabajo y del índice
+    </p>
+    <p>
+            examinar el historial y el estado (ver también: revisiones de ayuda de git)
+           bisect Utilice la búsqueda binaria para encontrar la confirmación que introdujo un error
+           diff Muestra los cambios entre confirmaciones, confirmación y árbol de trabajo, etc.
+           grep Imprime líneas que coinciden con un patrón
+           log Mostrar registros de confirmación
+           showMostrar varios tipos de objetos
+           estado Mostrar el estado del árbol de trabajo
+    </p>
+
+    <p>
+        crecer, marcar y modificar su historia común
+        sucursal Enumerar, crear o eliminar sucursales
+        commit Registrar cambios en el repositorio
+        fusionar Unir dos o más historias de desarrollo juntas
+        rebase Reapply confirma sobre otro consejo base
+        restablecer Restablecer HEAD actual al estado especificado
+        cambiar cambiar ramas
+        etiqueta Crear, enumerar, eliminar o verificar un objeto de etiqueta firmado con GPG
+    </p>
+    <p>
+        
+        colaborar (ver también: flujos de trabajo de ayuda de git)
+        buscar Descargar objetos y referencias de otro repositorio
+        extraiga Fetch e integre con otro repositorio o una sucursal local
+        empujar Actualizar referencias remotas junto con objetos asociados
+
+    </p>
+    <p>
+        'git help -a' y 'git help -g' enumeran los subcomandos disponibles y algunos
+        guías conceptuales. Consulte 'git help <comando>' o 'git help <concepto>'
+        para leer sobre un subcomando o concepto específico.
+        Consulte 'git help git' para obtener una descripción general del sistema.
+
+    </p>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Comando</th>
+                <th>Argumentos</th>
+                <th>Que hace</th>
+            </tr>    
+        </thead>
+        <tbody>
+            <tr>
+                <td>git config --global user.name</td>
+                <td>"Francisco Burgos"</td>
+                <td>sirve para setear el valor del nombre del usuario a todos los proyectos en general</td>
+            </tr>
+            <tr>
+                <td>git config --global user.email</td>
+                <td>"2013fjbh@gmail.com"</td>
+                <td>sirve para setear el valor del email del usuario en todos los prectos</td>
+            </tr>
+            <tr>
+                <td>git config --local  </td>
+                <td></td>
+                <td>es lo mismo que el global pero para la foma local</td>
+            </tr>
+            <tr>
+                <td>git init  </td>
+                <td></td>
+                <td>para iniciar un repositorio local</td>
+            </tr>
+            <tr>
+                <td>git add</td>
+                <td>nombreArchivo</td>
+                <td>para agregar un archivo especifico</td>
+            </tr>
+            <tr>
+                <td>git add</td>
+                <td>.</td>
+                <td>se agrega todos los archivos al stayin area</td>
+            </tr>
+            <tr>
+                <td>git status</td>
+                <td></td>
+                <td>estado del repositorio local</td>
+            </tr>
+            <tr>
+                <td> git commit -m</td>
+                <td>"comentario"</td>
+                <td>coloca un comentario al repositorio descriptio de lo que se hizo</td>
+            </tr>
+            <tr>
+                <td>git log </td>
+                <td></td>
+                <td>trae el historial del commit completo</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+        
+    </table>
+                                          
 
 </body>
 </html>
