@@ -122,64 +122,286 @@
                 <td>trae el historial del commit completo</td>
             </tr>
             <tr>
+                <td>git log oneline</td>
                 <td></td>
-                <td></td>
-                <td></td>
+                <td>trae el historial de comit en una linea resumido</td>
             </tr>
             <tr>
+                <td>git log -p</td>
                 <td></td>
-                <td></td>
-                <td></td>
+                <td>trae un div del codigo modificado muesta los agregados y eliminados.</td>
             </tr>
             <tr>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>.gitignore</td>
+                <td>carpet/archivos</td>
+                <td>se agregan los archivos que no desean que se consideren por git</td>
             </tr>
             <tr>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>git log --pretty="format:%H %h %s % ae"</td>
+                <td>"format:%H %h %s % ae"</td>
+                <td>da formato a la vista del log <a href="https://devhints.io/git-log-format">Ver mas aqui</a></td>
             </tr>
             <tr>
+                <td>cd ..</td>
                 <td></td>
-                <td></td>
-                <td></td>
+                <td>retrocede una carpeta en el directorio</td>
             </tr>
             <tr>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>mkdir</td>
+                <td>nombre de la caprpeta</td>
+                <td>crea una carpeta en el directorio donde estes</td>
             </tr>
             <tr>
+                <td>git init --bare</td>
                 <td></td>
-                <td></td>
-                <td></td>
+                <td>este bare indica que este repositorio es pur y solo contiene las modificaciones, no tiene copia de archivos y hace qe acccedamos rapido al repo remoto</td>
             </tr>
             <tr>
+                <td>git remote</td>
                 <td></td>
-                <td></td>
-                <td></td>
+                <td>lista todos los repositorios remotos</td>
             </tr>
             <tr>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>git remoto add</td>
+                <td>nombreRepoRemoto  path(se obtiene o de git hub o del git --bare localmente)</td>
+                <td>agrega un repositorio remoto al proyectos</td>
             </tr>
             <tr>
+                <td>git remote -v</td>
                 <td></td>
-                <td></td>
-                <td></td>
+                <td>nos muestra el directorio al que estamos apuntando fetch (escuchar) push(mandar)</td>
             </tr>
             <tr>
+                <td>git clone</td>
+                <td>/c/Users/Fran/Documents/git/servidor/ nombreGuste</td>
+                <td>clona un repositorio en una carpea en git bash se coloca asi </td>
+            </tr>
+            <tr>
+                <td>git clone</td>
+                <td>"https....."  -->esta vez es obtenido de internet el repo</td>
+                <td>clona o trae un repositorio remoto a nuestra computadora, creando un repositorio local. </td>
+            </tr>
+            <tr>
+                <td>git push  </td>
+                <td>nombreServidor master</td>
+                <td>enviar datos al servidor local para q el eqipo lo vea</td>
+            </tr>
+            <tr>
+                <td>git remote rename  </td>
+                <td>nombreActual nuevoNombre</td>
+                <td> cambia el nombre del repositorio remoto por defecto git le pone origin</td>
+            </tr>
+            <tr>
+                <td>git pull origin master</td>
+                <td>nombreServidor local</td>
+                <td>actualiza el servidor local con los datos del servidor remoto </td>
+            </tr>
+            <tr>
+                <td>git branch </td>
                 <td></td>
+                <td>Muestra las ramas creadas </td>
+            </tr>
+            <tr>
+                <td> git branch </td>
+                <td>nombreRama</td>
+                <td> Crea una rama</td>
+            </tr>
+            <tr>
+                <td>git checkout </td>
+                <td>nombre destino  rama o master</td>
+                <td>cambia de rama a master o ramas </td>
+            </tr>
+            <tr>
+                <td>git checkout -b </td>
+                <td>nombreRama</td>
+                <td> crea la rama y se posiciona en la rama creada</td>
+            </tr>
+            <tr>
+                <td>git merge</td>
+                <td>noombre de la branch</td>
+                <td>se debe estar parado en la master para unir la branch con la master en laconsola para salir del mensaje :x , los commit de la branchse veran en uno solo de la master</td>
+            </tr>
+            <tr>
+                <td>git rebase</td>
+                <td>nombre de la branch</td>
+                <td>ver los commit de la branch en la master detallados antes de la union de la rama con la master</td>
+            </tr>
+            <tr>
+                <td>git log</td>
+                <td>--graph</td>
+                <td>ver los commit en la master desde consola sobre los cambios que se hacen en la branch </td>
+            </tr>
+            <tr>
+                <td>git restore</td>
+                <td>--staged <fileN></td>
+                <td>esto develve la accion despues de haberlo agregado con git add</td>
+            </tr>
+            <tr>
+                <td>git restore</td>
                 <td></td>
+                <td>revierte los cambios guardados con ctrl s </td>
+            </tr>
+            <tr>
+                <td>git revert</td>
+                <td>numero del hash del commit</td>
+                <td>para revertr un commit realizado buscamos el hash del commit y lo aplicamos al comando, y si estamos de acuerdo con el cambio :x para salir</td>
+            </tr>
+            <tr>
+                <td>git stash</td>
                 <td></td>
+                <td>guarda los cambios realizados temporalmente en algun lado de git WIP workin in progress</td>
+            </tr>
+            <tr>
+                <td>git stash list</td>
+                <td></td>
+                <td>me muestra la lista de todos los stash que tengo guardados disponibles para ser recuperados</td>
+            </tr>
+            <tr>
+                <td>git stash apply</td>
+                <td>index de la lista ej 0</td>
+                <td>recupera en cambio guardado temporalmente en la posicion 0 de la lista que hay en el stash , este comando no eliminara la posicion de la listaexistente</td>
+            </tr>
+            <tr>
+                <td>git stash pop</td>
+                <td></td>
+                <td>toma el ultimo stash guardado en la lista del stash y elimina esa posicion de la lista existente</td>
+            </tr>
+            <tr>
+                <td>git stash drop </td>
+                <td>posicion de la lista a eliminar</td>
+                <td>elimina la posicion de la lista de stash que se uso con el apply</td>
+            </tr>
+            <tr>
+                <td>git checkout</td>
+                <td>7 digitos del hash</td>
+                <td>se cambia al tiempo de ese momento todos los cambios que se hacen aqui seran olvidados al cambarnos</td>
+            </tr>
+            <tr>
+                <td>git diff</td>
+                <td>primerHash..segundoHash</td>
+                <td>muestra la diferencias entre ese rango de commits</td>
+            </tr>
+            <tr>
+                <td>git diff</td>
+                <td></td>
+                <td>el git diff solo funciona para los cambios que no han sido agregados al staying area es decir git add</td>
+            </tr>
+            <tr>
+                <td>git log</td>
+                <td>-n 2</td>
+                <td>muestra los dos ultimos commit realizados</td>
+            </tr>
+            <tr>
+                <td>git tag</td>
+                <td>-a v0.1.0 -m"commit"</td>
+                <td>para crear una bandera en un determinado punto del proyecyo y agregarle , este tag se puede pushear como una rama</td>
+            </tr>
+            <tr>
+                <td>git remote </td>
+                <td>-v</td>
+                <td>muestra los repositorios remotos que tiene agregado el proyecto o e repo local</td>
             </tr>
         </tbody>
         
     </table>
+    <p>NOTA: git push origin master , este comando significa enviar al remoto  al servidor origin que por defecto Git
+         le asigna ese nombre pero se puede modificar. esto aplica tambien para Git remote add origin "https:..." o Git pull orign master</p>
                                           
+         <h1>Para saber más: GitHub</h1>        
+         
+         <p>
+            Con GitHub, podemos tener repositorios remotos públicos y privados gratuitos para almacenar y compartir el código de nuestros proyectos.
+         </p>
+         
+         <p>
+            Te recomendamos leer el articulo sobre Nueva exigencia de Git por requisito de token, ¿qué es y qué debo hacer? es una actualización 
+             y exigencia de seguridad realizada por GitHub en la cual recomiendan comenzar a utilizar un token de acceso personal por razones de seguridad,
+            en el tienes un paso a paso para realizar esta configuración.
+         </p>
+         
+         <h2>leer estos artículos:</h2>
+         <a href="https://www.aluracursos.com/blog/ssh-acceso-remoto-a-servidores">https://www.aluracursos.com/blog/ssh-acceso-remoto-a-servidores</a><br>
+         <a href="https://www.aluracursos.com/blog/exigendia-autenticacion-por-token">https://www.aluracursos.com/blog/exigendia-autenticacion-por-token</a>
+         
+         <ul>
+           <li>  1) En la carpeta que está tu proyecto, realiza cualquier cambio en el archivo index.html;</li>
 
+           <li>  2) Ejecuta git status y vea que hay un cambio para agregar;</li>
+
+           <li>  3) Ejecuta el comando git checkout - index.html. Verifica si tu cambio se ha deshecho;</li>
+
+           <li>  4) Nuevamente, realiza algunos cambios en el archivo index.html;</li>
+
+           <li>  5) Ejecuta el comando git add index.html;</li>
+
+           <li>  6) Ejecuta el comando git reset HEAD index.html para devolver el archivo index.html al HEAD 
+            del proyecto (elimínalo del stage, que es lo que será enviado para el commit);</li>
+
+           <li>  7) Repite el paso 3;</li>
+
+           <li>  8) Vuelve a realizar un cambio en el código;</li>
+
+           <li>  9) Ejecuta el comando git add index.html y el comando git commit -m "Cambiando el código" para realizar un commit;</li>
+
+            <li> 10) Ejecuta el comando git log y copia el hash de este commit recién creado;</li>
+
+            <li> 11) Ejecuta el comando git revert {hash}, reemplazando {hash} con el hash que copiaste anteriormente;</li>
+
+            <li> 12) Verifica que tus cambios se hayan deshecho;</li>
+
+            <li> 13) Cambia el nombre del curso de Ansible a "Ansible: Infraestructura como código";</li>
+
+            <li> 14) Ejecuta el comando git stash para guardar estos cambios en el stash;</li>
+
+            <li> 15) Cambia el nombre del curso de Kubernetes a "Kubernetes: Introducción a la orquestación de containers";</li>
+
+            <li> 16) Ejecuta el comando git add index.html y el comando git commit -m "Cambiar el nombre del curso de Kubernetes"
+                 para realizar un commit;</li>
+
+            <li> 17) Ejecuta el comando git stash pop para que aparezca el último cambio en el stash;</li>
+
+            <li> 18) Ejecuta el comando git add index.html y el comando git commit -m "Cambiar el nombre del curso Ansible" 
+                para realizar un commit;</li>
+
+            <li> 19) Ejecuta el comando git push servidorlocal master para enviar todos tus cambios;</li>
+
+            <li> 20) Ejecuta el comando git log --oneline para ver los commits de forma resumida. 
+                Copia el hash del commit de merge con la branch lista;</li>
+
+            <li> 21) Ejecuta el comando git checkout {hash} reemplazando {hash} con el hash que copiaste;</li>
+
+            <li> 22) Ve que varios cambios ya no están más presentes;</li>
+
+            <li> 23) Ejecuta git checkout master para volver a la línea de desarrollo principal.</li>
+        </ul>
+         
+
+        <ul>
+            <li> Que Git puede ayudarnos a deshacer cambios que no vamos a utilizar;</li>
+            <li>Que, para deshacer un cambio antes de agregarlo para commit(con git add),
+                podemos usar el comando git restore <archivos>;</li>
+            <li>Que, para deshacer un cambio después de agregarlo paracommit, primero debemos ejecutar git restore --staged <archivos>
+                y luego podemos deshacerlos con git restore <files>;</li>
+            <li> Que, para revertir los cambios realizados en un commit, el comando git revert puede ser la solución;</li>
+            <li>Que el comando git revert genera un nuevo commit informando que los cambios fueron deshechos;</li>
+            <li>Que, para guardar un trabajo y reanudarlo más tarde, podemos usar git stash;</li>
+            <li>Que, para ver qué cambios hay en el stash, podemos usar el comando git stash list;</li>
+            <li>Que, con el comando git stash apply <número>, podemos aplicar un cambio específico al stash;</li>
+            <li> Que el comando git stash drop <número> elimina un elemento determinado del stash;</li>
+            <li> Que el comando git stash pop aplica y elimina el último cambio que se agregó alstash;</li>
+            <li> Que git checkout sirve para dejar la copia del código de nuestra aplicación en el estado que queremos:
+             <li>git checkout <branch> deja el código en el estado de una branchcon el nombre <branch>;</li>
+            <li>git checkout <hash> deja el código en el estado de commit con el hash <hash>.</li>
+            <li>   7) Ejecute el comando git tag -a v0.1.0 para crear un tag en tu código;</li>
+            <li>8) Ejecuta el comando git push origin v0.1.0 para enviar este tag a GitHub;</li>
+            <li>9) Abre la página del repositorio de GitHub que creaste y verifica la pestaña Releases.</li>
+            <li>Que es posible ver qué cambios se hicieron en cada archivo, con el comando git diff;</li>
+            <li>Que, al escribir solo git diff, vemos los cambios en nuestros archivos que no se agregaron para commit (con git add);</li>
+            <li>Que es posible comparar cambios entre dos ramas con git diff <branch1> .. <branch2></li>
+            <li>Que es posible comparar los cambios realizados entre un commit y otro, usando el comando git diff <commit1> .. <commit2>;</li>
+            <li>Que Git nos permite guardar “marcos” de nuestra aplicación, por ejemplo, generando versiones, a través de git tag;</li>
+            <li>Que el comando git tag -a se usa para generar una nueva tag;</li>
+            <li>Las Releases de GitHub, que son generadas para cada tag de Git que creamos en nuestro repositorio.</li>
+        </ul>
 </body>
 </html>
